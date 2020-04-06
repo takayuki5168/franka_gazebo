@@ -3,7 +3,7 @@
   <node name="spawn" pkg="gazebo_ros" type="spawn_model" args="-param robot_description -urdf -model panda" output="screen"/>
 
   <rosparam command="load" file="$(find franka_gazebo)/config/joint_states.yaml" ns="franka"/>
-  <rosparam command="load" file="$(find franka_gazebo)/config/default.yaml"/>
+  <rosparam command="load" file="$(find franka_gazebo)/config/pid.yaml"/>
   <rosparam command="load" file="$(find franka_gazebo)/config/arm_controller.yaml" />
   <rosparam command="load" file="$(find franka_gazebo)/config/gripper_controller.yaml" />
 
